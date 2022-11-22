@@ -1,0 +1,98 @@
+body{
+  width: 100% !important;
+}
+header{
+    padding-right: 50px;
+    padding-left: 50px;
+    background-color: #e2c1fc;
+    position: relative;
+    width: 100%;
+}
+main{
+  background-image: url(../imagens/fundo.jpg);
+  height: 74.3vh;
+}
+#logo{
+  width: 100px;
+  background-color: #e2c1fc;
+  border: #e2c1fc;
+}
+.nav-link.px-2.link-dark{
+  border-radius: 10px;
+}
+.nav-link.px-2.link-dark:hover{
+  background-color: #c790f1;
+}
+.div-form{
+  position: fixed;
+  padding-top: 10vh;
+  padding-left: 40vw;
+  width: 60vw;
+}
+#form-inside{
+  background-color: #e2c1fc;
+  border-radius: 10px;
+  
+}
+#firstForm{
+  background-color: #e2c1fc;
+  padding: 20px;
+  border-radius: 10px;
+}
+#secondForm{
+  background-color: #e2c1fc;
+  padding: 20px;
+  border-radius: 10px;
+}
+#botton-toLogin{
+  text-decoration: underline;
+  border: 0px;
+  background-color: #e2c1fc;
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+footer{
+  width: 100%;
+  position: fixed;
+  padding-top: 10px;
+}
+.btn.btn-primary{
+  border: 1px solid #fff;
+  background-color: #000000;
+}
+@media only screen and (max-width: 480px){
+  header{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .mb-2, #white-buttons{
+    display: none;
+  }
+  .d-block.w-100{
+    width: 200vh !important;
+    height: 40vh;
+  }
+  .div-form{
+    padding-top: 5vh;
+    padding-left: 8vw;
+    padding-bottom: 30vh;
+  }
+  #firstForm{
+    width: 83vw;
+  }
+  .mb-3{
+    margin-bottom: 3vh;
+  }
+  .btn.btn-primary{
+    width: 100%;
+  }
+  footer{
+    display: none;
+  }
+  
+}

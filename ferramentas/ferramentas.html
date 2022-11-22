@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="colorjoe/colorjoe.css">
+    <script src="colorjoe/colorjoe.min.js"></script>
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+<body>
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-0 border-bottom">
+        <a id="logo" href="../index.html" target="_blank" ><img src="../imagens/Logo.png" width="90px" /></a>
+        <a href="/" class="d-flex align-items-center col-md-0 mb-2 mb-md-0 text-dark text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"></svg>
+        </a>
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="../index.html#features" class="nav-link px-2 link-dark">Características</a></li>
+            <li><a href="../index.html#working" class="nav-link px-2 link-dark">Funcionamento</a></li>
+            <li><a href="../index.html#about" class="nav-link px-2 link-dark">Sobre</a></li>
+        </ul>
+  
+        <div class="col-md-3 text-end">
+          <form action="/myaccount" method="POST">
+            <button name="myaccount" value="add" id="botton-registro" class="btn btn-dark">Minha Conta</button>
+          </form>
+        </div>
+    </header>
+    <main>
+      <div id="ferramentas">
+        <div id="div-per-buttons">
+          <a class="per-buttons" id="butt-button">
+            <img src="../imagens/butt-button.png" width="50px" />
+          </a>
+          <a class="per-buttons" id="round-button">
+            <img src="../imagens/round-button.png" width="50px" />
+          </a>
+          <a class="per-buttons" id="square-button">
+            <img src="../imagens/square-button.png" width="50px" />
+          </a>
+          <a class="per-buttons" id="clear-button">
+            <img src="../imagens/clean-icon.png" width="50px" />
+          </a>
+          <input type="range" min="1" max="100" class="form-range" id="customRange1">
+          <a class="per-buttons" id="undo-Button">
+            <img src="../imagens/undo.png" width="50px" />
+          </a>
+          <div class="dropdown2">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img id="dropdownbuttonimage2"src="../imagens/cor10.png"></button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" id="o-color" href="#"><img id="op-color" src="../imagens/cor10.png"></a>
+              <a class="dropdown-item" id="th-color" href="#"><img id="op-color" src="../imagens/cor2.png"></a>
+              <a class="dropdown-item" id="fo-color" href="#"><img id="op-color" src="../imagens/cor3.png"></a>
+              <a class="dropdown-item" id="fi-color" href="#"><img id="op-color" src="../imagens/cor4.png"></a>
+              <a class="dropdown-item" id="si-color" href="#"><img id="op-color" src="../imagens/cor5.png"></a>
+              <a class="dropdown-item" id="se-color" href="#"><img id="op-color" src="../imagens/cor6.png"></a>
+              <a class="dropdown-item" id="ei-color" href="#"><img id="op-color" src="../imagens/cor7.png"></a>
+              <a class="dropdown-item" id="ni-color" href="#"><img id="op-color" src="../imagens/cor8.png"></a>
+              <a class="dropdown-item" id="te-color" href="#"><img id="op-color" src="../imagens/cor9.png"></a>
+            </div>
+          </div>
+        </div>
+        <div id="cloths">
+          <div id="first-option">
+            <img id="clothes-option"src="../imagens/blusa-1.png">
+            <button id="put-clothes">Posicionar</button>
+            <form action="/add-image" method="POST">
+              <button name="add-image" value="add" id="save-model">Salvar</button>
+              <input name="input64" id="input64">
+            </form>
+          <img name="img" id="canvasImg"></img>
+          </div>
+        </div>
+        <div id="canva-div">
+            <canvas id = "tela">
+            </canvas>
+        </div>
+        <div id="colorwheel-div">
+          <div class="container-colowheel">
+            <div class="colorjoe"></div>
+            <div class="config">
+                  <div class="config-title">COR SELECIONADA</div>
+                  <div class="selected-color-text"></div>
+                  <div class="selected-color"></div>
+                  <div class="config-title">COR SELECIONADA</div>
+                  <div class="saved-color"></div>
+                  <div class="saved-color"></div>
+                  <div class="saved-color"></div>
+                  <div class="saved-color"></div>
+                  <div class="saved-color"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="./scripts/ColorPicker.js"></script>
+    </main>
+    <footer class="text-center text-white" style="background-color: #e2c1fc;">
+        <!-- Grid container -->
+        <div class="container pt-4">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+      
+            <!-- Twitter -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-twitter"></i
+            ></a>
+      
+            <!-- Google -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-google"></i
+            ></a>
+      
+            <!-- Instagram -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-instagram"></i
+            ></a>
+      
+            <!-- Linkedin -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <!-- Github -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2022 Copyright:
+          <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>

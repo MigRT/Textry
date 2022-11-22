@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+<body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <section id="Home">
+    <script>
+      function OpenPrin() {
+          window.open("./ferramentas/ferramentas.html", "_blank");
+      }
+    </script>
+      <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-0 border-bottom">
+          <a id="logo" href="./index.html" target="_blank"><img src="imagens/Logo.png" width="90px" /></a>
+          <a href="/" class="d-flex align-items-center col-md-0 mb-2 mb-md-0 text-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"></svg>
+          </a>
+          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="#features" class="nav-link px-2 link-dark">Características</a></li>
+            <li><a href="#working" class="nav-link px-2 link-dark">Funcionamento</a></li>
+            <li><a href="#about" class="nav-link px-2 link-dark">Sobre</a></li>
+          </ul>
+    
+          <div class="col-md-3 text-end">
+            <form action="/myaccount" method="POST">
+              <button name="myaccount" value="add" id="botton-registro" class="btn btn-dark">Minha Conta</button>
+            </form>
+          </div>
+      </header>
+    </section>
+    <main>
+      <div id="carouselExampleDark" class="carousel carousel-white slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <div class="custom-button">
+            <form action="/personalize" method="POST">
+              <button name="personalize" value="add" class="btn">Personalizar</button>
+            </form>
+          </div>
+          <button type="button" data-bs-target="#carouselExampleWhite" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <div class="custom-button">
+            <form action="/personalize" method="POST">
+              <button name="personalize" value="add" class="btn">Personalizar</button>
+            </form>
+          </div>
+          <button type="button" data-bs-target="#carouselExampleWhite" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <div class="custom-button">
+            <form action="/personalize" method="POST">
+              <button name="personalize" value="add" class="btn">Personalizar</button>
+            </form>
+          </div>
+          <button id="white-buttons"type="button" data-bs-target="#carouselExampleWhite" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="imagens/pers1.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Personalizações de roupa é aqui!</h5>
+              <p></p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="imagens/pers2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Atualização 2.0</h5>
+              <p></p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="imagens/pers3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Novos tecidos inseridos!</h5>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+        <section id="features">
+          <div class="container px-4 py-5" id="icon-grid">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-2 g-4 py-5">
+                <div class="col d-flex align-items-start">
+                  <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"></svg>
+                  <img id="minimals" src="imagens/icons8-roupas-64.png"></img>
+                  <div>
+                    <h4 class="fw-bold mb-0">Qualquer peça!</h4>
+                    <p>Escolha qualquer tipo de peça para personalizar.</p>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                  <svg class="bi text-muted flex-shrink-0 me-0" width="1.75em" height="1.75em"></svg>
+                  <img id="minimals" src="imagens/icons8-design.gif"></img>
+                  <div>
+                    <h4 class="fw-bold mb-0">Personalização!</h4>
+                    <p>Personalize da forma que quiser.</p>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                  <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"></svg>
+                  <img id="minimals" src="imagens/icons8-em-trânsito.gif"></img>
+                  <div>
+                    <h4 class="fw-bold mb-0">Rápido e fácil!</h4>
+                    <p>Todo o processo é rápido e prático.</p>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                  <svg class="bi text-muted flex-shrink-0 me-0" width="1.75em" height="1.75em"></svg>
+                  <img id="minimals" src="imagens/icons8-vencedor.gif"></img>
+                  <div>
+                    <h4 class="fw-bold mb-0">Do seu jeito!</h4>
+                    <p>Os processos são definidos de acordo com sua preferência.</p>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                  <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"></svg>
+                  <img id="minimals" src="imagens/icons8-roupas-64.png"></img>
+                  <div>
+                    <h4 class="fw-bold mb-0">Featured title</h4>
+                    <p>Paragraph of text beneath the heading to explain the heading.</p>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                  <svg class="bi text-muted flex-shrink-0 me-0" width="1.75em" height="1.75em"></svg>
+                  <img id="minimals" src="imagens/icons8-design.gif"></img>
+                  <div>
+                    <h4 class="fw-bold mb-0">Featured title</h4>
+                    <p>Paragraph of text beneath the heading to explain the heading.</p>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                  <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"></svg>
+                  <img id="minimals" src="imagens/icons8-em-trânsito.gif"></img>
+                  <div>
+                    <h4 class="fw-bold mb-0">Featured title</h4>
+                    <p>Paragraph of text beneath the heading to explain the heading.</p>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                  <svg class="bi text-muted flex-shrink-0 me-0" width="1.75em" height="1.75em"></svg>
+                  <img id="minimals" src="imagens/icons8-vencedor.gif"></img>
+                  <div>
+                    <h4 class="fw-bold mb-0">Featured title</h4>
+                    <p>Paragraph of text beneath the heading to explain the heading.</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </section>
+        <section id="working">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card">
+                  <img src="imagens/benjamin-rascoe-ItqFmSxKnIg-unsplash.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">ESCOLHA</h5>
+                    <p class="card-text">Liberdade para escolher!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="imagens/maude-frederique-lavoie-EDSTj4kCUcw-unsplash.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">PERSONALIZE</h5>
+                    <p class="card-text">Ferramentas de personalização na sua mão.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="imagens/the-nix-company-CkCUvwMXAac-unsplash.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">COMPRE</h5>
+                    <p class="card-text">Com as ferramentas utilizadas aqui, é possível passá las para um produtor.</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </section>
+    </main>
+    <section id="about">
+      <footer class="text-center text-white" style="background-color: #e2c1fc;">
+          <!-- Grid container -->
+          <div class="container pt-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+              <!-- Facebook -->
+              <a
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="#!"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+        
+              <!-- Twitter -->
+              <a
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="#!"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="fab fa-twitter"></i
+              ></a>
+        
+              <!-- Google -->
+              <a
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="#!"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="fab fa-google"></i
+              ></a>
+        
+              <!-- Instagram -->
+              <a
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="#!"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="fab fa-instagram"></i
+              ></a>
+        
+              <!-- Linkedin -->
+              <a
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="#!"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <!-- Github -->
+              <a
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="#!"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="fab fa-github"></i
+              ></a>
+            </section>
+            <!-- Section: Social media -->
+          </div>
+          <!-- Grid container -->
+        
+          <!-- Copyright -->
+          <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright:
+            <a class="text-dark" href="./index.html">textry.com</a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+    </section>
+</body>
+</html>

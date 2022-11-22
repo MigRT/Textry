@@ -1,0 +1,153 @@
+body{
+  width: 100% !important;
+}
+header{
+    background-color: #e2c1fc;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+#logo{
+  width: 100px;
+  background-color: #e2c1fc;
+  border: #e2c1fc;
+}
+.nav-link.px-2.link-dark{
+  border-radius: 10px;
+}
+.nav-link.px-2.link-dark:hover{
+  background-color: #c790f1;
+}
+.d-block.w-100{
+  max-height: 700px;
+}
+.custom-button{
+  padding-bottom: 10vh;
+}
+.custom-button .btn {
+  background-color: #000000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+.carousel-caption{
+  padding-bottom: 10vh;
+}
+.pb-2{
+  text-align: center;
+}
+.pb-2.border-bottom{
+  padding-bottom: 40px !important;
+  border-bottom: 1px solid #000000!important;;
+}
+.container.px-4.py-5{
+  max-width: 1920px;
+  width: 100%;
+  margin-right: 0%;
+  margin-left: 0%;
+  background-color: #E9CDFF;
+}
+.col.d-flex.align-items-start{
+  background-color: #e2c1fc;
+  background-clip: #e2c1fc;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  --bs-gutter-y: 0;
+}
+#minimals{
+  width: 100px;
+  padding-right: 20px;
+}
+p{
+  font-size: large;
+}
+.container.pt-4{
+  background-color: #e2c1fc;
+}
+.row.row-cols-1.row-cols-md-3.g-4{
+  margin-right: 0;
+  padding-right: 5vw;
+  padding-left: 5vw;
+  background-color: #E9CDFF;
+  padding-bottom: 8vh;
+}
+#divH1Modelos{
+  color: #fff;
+  text-align: center;
+  background-color: #353535;
+  width: 100%;
+  height: 11vh;
+}
+#h1Modelos{
+  padding-top: 3vh;
+}
+#divModelos{
+  margin-left: 10vw;
+  width: 80vw;
+  background-color: #D9D9D9;
+  height: 140vh;
+}
+#main{
+  background-color: #F1E0FE;
+}
+.savedModels{
+  background-color: #D9D9D9 !important;
+}
+.savedImg{
+  max-width: 400px;
+}
+#clothesDiv{
+  border-top: 5vh solid #D9D9D9;
+  border-left: 5vw solid #D9D9D9;
+  float: left;
+  border-radius: 10px;
+  width: 460px;
+  background-color: #fff;
+}
+#clothesP{
+  height: 5vh;
+  color: #fff;
+  font-size: 24px;
+  background-color: #2C2C2C;
+  text-align: center;
+}
+@media only screen and (max-width: 480px){
+  header{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .mb-2, #white-buttons{
+    display: none;
+  }
+  .d-block.w-100{
+    width: 200vh !important;
+    height: 40vh;
+  }
+  .custom-button{
+    padding-bottom: 1vh;
+  }
+  .custom-button .btn{
+    top: 0px;
+  }
+  .row>*{
+    padding-left: 0;
+  }
+  .me-3{
+    margin-right: 0 !important;
+  }
+  .py-5{
+    padding-top: 5vh !important;
+    padding-bottom: 5vh !important;
+  }
+  .row.row-cols-1.row-cols-md-3.g-4{
+    padding-left: 10vw;
+  }
+}

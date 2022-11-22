@@ -1,0 +1,270 @@
+body{
+  width: 100% !important;
+}
+header{
+    background-color: #e2c1fc;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+main{
+  background-color: #F5F5F5;
+  height: 80vh;
+}
+#logo{
+  width: 100px;
+  background-color: #e2c1fc;
+  border: #e2c1fc;
+}
+.nav-link.px-2.link-dark{
+  border-radius: 10px;
+}
+.nav-link.px-2.link-dark:hover{
+  background-color: #c790f1;
+}
+#ferramentas{
+  width: 100%;
+  float: left;
+  background-color: #F5F5F5;
+  padding-bottom: 21vh;
+}
+#div-per-buttons{
+  float: left;
+  background-color: #535353;
+  width: 100%;
+}
+.per-buttons{
+  float: left;
+  margin: 10px;
+  width: 55px;
+  height: 55px;
+}
+#butt-button{
+  border: 1px solid #000;
+  background-color: #F5F5F5;
+}
+#round-button{
+  border: 1px solid #000;
+  background-color: #F5F5F5;
+}
+#square-button{
+  border: 1px solid #000;
+  background-color: #F5F5F5;
+}
+#clear-button{
+  border: 1px solid #000;
+  background-color: #F5F5F5;
+}
+.form-range{
+  padding-left: 14px;
+  padding-top: 34px;
+  width: 150px;
+}
+#undo-Button{
+  border: 1px solid #000;
+  background-color: #F5F5F5;
+}
+.dropdown2{
+  float: left;
+  position: unset !important;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.dropdown-menu{
+  float: left;
+}
+#dropdownMenuButton{
+  background-color:#c790f1;
+  width: 65px;
+  height: 50px;
+}
+#dropdownMenuButton2{
+  background-color:#c790f1;
+  width: 65px;
+  height: 50px;
+}
+.dropdown-menu{
+  min-width: 50px;
+}
+#dropdownbuttonimage{
+  width: 30px;
+  padding-right: 3px;
+}
+#dropdownbuttonimage2{
+  width: 30px;
+  padding-right: 3px;
+}
+#op-color{
+  width: 20px;
+}
+#cloths{
+  margin-top: 11vh;
+  position:absolute;
+  width: 20vw;
+  height: 60vh;
+  background-color: #e4c8fa !important;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(0 0 0);
+}
+#first-option{
+  padding-left: 50px;
+  padding-top: 30px;
+}
+#put-clothes{
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-left: 25px;
+  background-color: #ffff;
+}
+#clothes-option{
+  background-color: #F5F5F5;
+  border: 1px solid #000;
+}
+
+#canva-div{
+  padding-left: 30vw;
+  width: 55vw;
+  padding-top: 11vh;
+}
+
+#tela{
+  float: left;
+  background-color: #ffff;
+  width: 600px;
+  height: 600px;
+  border: 1px solid;
+}
+#colorwheel-div{
+  padding-left: 5vw;
+  float: left;
+}
+.container-colowheel{
+  width: 20vw;
+  background-color: #e4c8fa !important;
+  margin: 0 !important;
+  background: #eeeeee;
+}
+.colorPicker{
+  background: none;
+  border: none;
+  margin: none;
+}
+.colorPicker .oned{
+  margin-right: 0;
+}
+.container-colowheel{
+  padding: 20px;
+  background: #ffff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 15);
+}
+.config{
+  flex-grow: 1;
+  margin-left: 20px;
+}
+.config-title{
+  text-align: center;
+  padding: 15px 0;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.selected-color-text{
+  text-align: center;
+  font-family: monospace;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+.selected-color,.saved-color{
+  height: 15px;
+  border: 1px solid #eeeeee;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.saved-color:not(:last-of-type){
+ margin-bottom: 5px; 
+}
+#input64{
+  display: none;
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1366px){
+  #div-per-buttons{
+    margin-bottom: 20px;
+  }
+  #cloths{
+    margin-top: 14vh;
+    width: 16vw;
+  }
+  #first-option {
+    padding-left: 30px;
+  }
+  #canva-div {
+    padding-left: 22vw;
+  }
+  #tela{
+    width: 400px;
+    height: 400px;
+  }
+  .container-colowheel {
+    padding: 5px;
+    width: 25vw;
+  }
+  footer{
+    margin-top: 30vh;
+  }
+}
+@media only screen and (max-width: 480px){
+  header{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .mb-2, #white-buttons{
+    display: none;
+  }
+  .d-block.w-100{
+    width: 200vh !important;
+    height: 40vh;
+  }
+  .div-form{
+    padding-top: 5vh;
+    padding-left: 8vw;
+    padding-bottom: 30vh;
+  }
+  form{
+    width: 83vw;
+  }
+  .mb-3{
+    margin-bottom: 3vh;
+  }
+  .btn.btn-primary{
+    width: 100%;
+  }
+  footer{
+    display: none;
+  }
+  #cloths{
+    margin-left: 19px;
+    width: 90vw;
+    margin-top: 195vh;
+  }
+  #canva-div{
+    padding-left: 5px;
+  }
+  #tela{
+    width: 350px;
+    height: 500px;
+  }
+  .container-colowheel{
+    margin-top: 30px;
+    width: 90vw;
+  }
+  #colorwheel-div{
+    padding-top: 3vh;
+  }
+  .colorPicker{
+    margin: 0 !important;
+  }
+  .justify-content-center {
+    padding-left: 10px;
+    justify-content: left !important;
+}
+}
