@@ -115,32 +115,47 @@ app.get('/ferramentas', function(request, response) {
 });
 
 app.post('/add-image', function(request, response) {
-	
+	if (request.session.loggedin) {
+		connection.query('SELECT id FROM users WHERE email = ?', [request.session.name], function(error, results, fields) {
+			if (error) throw error;
+			request.session.idUser = results[0].id;
+		})
+	}
 	let base64;
 
 	(async (req, res) => {
 		await new Promise(resolve => setTimeout(resolve, 1000));
 		base64 = request.body.input64;
-
 		imagens.create({
-			img:base64
+			img:base64,
+			idUser:request.session.idUser
 		})
-
+		
 	})();
 	response.redirect('/ferramentas');
 	response.end();
 });
 
+app.get('/account', function(request, response) {
+	// Render login template
+	response.sendFile(path.join(__dirname + '/views/teste.ejs'));
+});
+
 app.post('/myaccount', function(request, response) {
 	if (request.session.loggedin) {
-		connection.query('SELECT img FROM images', function(error, results, fields) {
-			if (error) throw error;	
-			response.render("teste.ejs", {
-				results
-			})
-			
-		});
-	} else {
+		connection.query('SELECT id FROM users WHERE email = ?', [request.session.name], function(error, results, fields) {
+			if (error) throw error;
+			request.session.idUser = results[0].id;
+			connection.query('SELECT img FROM images WHERE idUser = ?', [request.session.idUser], function(error, results, fields) {
+				if (error) throw error;
+
+				response.render("teste.ejs", {
+					results
+				})
+			});
+		}) 
+	}
+	else {
 		response.redirect('/form-cadastro');
 	}
 });
@@ -156,6 +171,54 @@ app.post('/toLogin', function(request, response) {
 	response.redirect('/form-login');
 	response.end();
 });
+app.post('/loggout', function(request, response) {
+	request.session.loggedin = false;
+	response.redirect('/form-login');
+	response.end();
+});
+app.post('/dropImage1', function(request, response) {
+	if (request.session.loggedin) {
+	connection.query('DELETE FROM images WHERE id = 1', function(error, results, fields) {
+	})}
+	response.redirect('/ferramentas');
+	response.end();
+});
+app.post('/dropImage2', function(request, response) {
+	if (request.session.loggedin) {
+	connection.query('DELETE FROM images WHERE id = 2', function(error, results, fields) {
+	})}
+	response.redirect('/ferramentas');
+	response.end();
+});
+app.post('/dropImage3', function(request, response) {
+	if (request.session.loggedin) {
+	connection.query('DELETE FROM images WHERE id = 3', function(error, results, fields) {
+	})}
+	response.redirect('/ferramentas');
+	response.end();
+});
+app.post('/dropImage4', function(request, response) {
+	if (request.session.loggedin) {
+	connection.query('DELETE FROM images WHERE id = 4', function(error, results, fields) {
+	})}
+	response.redirect('/ferramentas');
+	response.end();
+});
+app.post('/dropImage5', function(request, response) {
+	if (request.session.loggedin) {
+	connection.query('DELETE FROM images WHERE id = 5', function(error, results, fields) {
+	})}
+	response.redirect('/ferramentas');
+	response.end();
+});
+app.post('/dropImage6', function(request, response) {
+	if (request.session.loggedin) {
+	connection.query('DELETE FROM images WHERE id = 6', function(error, results, fields) {
+	})}
+	response.redirect('/ferramentas');
+	response.end();
+});
+
 
 // http://localhost:3000/home
 app.get('/home', function(request, response) {

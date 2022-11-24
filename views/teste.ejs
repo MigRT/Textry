@@ -25,6 +25,10 @@
           <form action="/myaccount" method="POST">
             <button name="myaccount" value="add" id="botton-registro" class="btn btn-dark">Minha Conta</button>
           </form>
+          
+          <form action="/loggout" method="POST">
+            <button value="add" id="loggout" class="btn btn-danger">Sair</button>
+          </form>
         </div>
     </header>
     <div id="divH1Modelos">
@@ -40,6 +44,9 @@
                     <div id="clothesDiv">
                       <img class = "savedImg" id="perImage" src="<%=results[0].img%>"><img>
                       <p id="clothesP">Modelo 1</p>
+                      <form class="dropImage" action="/dropImage1" method="POST">
+                        <button name="dropImage" value="add" id="dropImage" class="btn btn-danger">Apagar Modelo</button>
+                      </form>
                     </div>
                   </div>
                 <% } %>
@@ -50,6 +57,9 @@
                   <div id="clothesDiv">
                     <img class = "savedImg" id="perImage" src="<%=results[1].img%>"><img>
                     <p id="clothesP">Modelo 2</p>
+                    <form class="dropImage" action="/dropImage2" method="POST">
+                      <button name="dropImage" value="add" id="dropImage" class="btn btn-danger">Apagar Modelo</button>
+                    </form>
                   </div>
                 </div>
               <% } %>
@@ -60,6 +70,9 @@
                   <div id="clothesDiv">
                     <img class = "savedImg" id="perImage" src="<%=results[2].img%>"><img>
                     <p id="clothesP">Modelo 3</p>
+                    <form class="dropImage" action="/dropImage3" method="POST">
+                      <button name="dropImage" value="add" id="dropImage" class="btn btn-danger">Apagar Modelo</button>
+                    </form>
                   </div>
                 </div>
               <% } %>
@@ -70,6 +83,9 @@
                   <div id="clothesDiv">
                     <img class = "savedImg" id="perImage" src="<%=results[3].img%>"><img>
                     <p id="clothesP">Modelo 4</p>
+                    <form class="dropImage" action="/dropImage4" method="POST">
+                      <button name="dropImage" value="add" id="dropImage" class="btn btn-danger">Apagar Modelo</button>
+                    </form>
                   </div>
                 </div>
               <% } %>
@@ -80,6 +96,9 @@
                   <div id="clothesDiv">
                     <img class = "savedImg" id="perImage" src="<%=results[4].img%>"><img>
                     <p id="clothesP">Modelo 5</p>
+                    <form class="dropImage" action="/dropImage5" method="POST">
+                      <button name="dropImage" value="add" id="dropImage" class="btn btn-danger">Apagar Modelo</button>
+                    </form>
                   </div>
                 </div>
               <% } %>
@@ -90,6 +109,9 @@
                   <div id="clothesDiv">
                     <img class = "savedImg" id="perImage" src="<%=results[5].img%>"><img>
                     <p id="clothesP">Modelo 6</p>
+                    <form class="dropImage" action="/dropImage6" method="POST">
+                      <button name="dropImage" value="add" id="dropImage" class="btn btn-danger">Apagar Modelo</button>
+                    </form>
                   </div>
                 </div>
               <% } %>
