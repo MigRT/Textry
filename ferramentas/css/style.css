@@ -69,6 +69,23 @@ main{
   padding-left: 10px;
   padding-top: 10px;
 }
+.dropdown3{
+  padding-left: 170px;
+}
+.dropdown4{
+  padding-left: 170px;
+  width: 280px;
+  margin-top: 154px;
+}
+#formAdd{
+  margin-top: 65px;
+}
+#download{
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+
 .dropdown-menu{
   float: left;
 }
@@ -82,6 +99,13 @@ main{
   width: 65px;
   height: 50px;
 }
+#dropdownMenuButton3{
+  background-color:#c790f1;
+}
+#dropdownMenuButton4{
+  background-color:#c790f1;
+}
+
 .dropdown-menu{
   min-width: 50px;
 }
@@ -93,29 +117,40 @@ main{
   width: 30px;
   padding-right: 3px;
 }
+.img2{
+  margin-top: 40px;
+}
 #op-color{
   width: 20px;
 }
 #cloths{
   margin-top: 11vh;
   position:absolute;
-  width: 20vw;
+  width: 23vw;
   height: 60vh;
   background-color: #e4c8fa !important;
   border-radius: 5px;
   box-shadow: 0 0 10px rgb(0 0 0);
 }
 #first-option{
+  width: 20vw;
+  height: 100vh;
   padding-left: 50px;
   padding-top: 30px;
 }
 #put-clothes{
+  margin-top: 50px;
   border-radius: 5px;
-  margin-top: 20px;
-  margin-left: 25px;
+  background-color: #ffff;
+}
+#put-clothes2{
+  margin-top: 50px;
+  border-radius: 5px;
   background-color: #ffff;
 }
 #clothes-option{
+  float: left;
+  max-width: 152px;
   background-color: #F5F5F5;
   border: 1px solid #000;
 }
@@ -147,6 +182,9 @@ main{
   background: none;
   border: none;
   margin: none;
+}
+#save-model{
+  border-radius: 5px;
 }
 .colorPicker .oned{
   margin-right: 0;
@@ -191,14 +229,15 @@ main{
     margin-bottom: 20px;
   }
   #cloths{
+    height: 97vh;
     margin-top: 14vh;
-    width: 16vw;
+    width: 23vw;
   }
   #first-option {
     padding-left: 30px;
   }
   #canva-div {
-    padding-left: 22vw;
+    padding-left: 34vw;
   }
   #tela{
     width: 400px;

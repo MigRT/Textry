@@ -133,12 +133,63 @@ document.addEventListener('DOMContentLoaded',()=>{
         contexto.clearRect(0, 0, tela.width, tela.height);
     };
     let dropdownMenuButton2 = document.querySelector("#dropdownbuttonimage2");
+    let dropdownMenuButton3 = document.querySelector("#dropdownbuttonimage3");
+    let dropdownMenuButton4 = document.querySelector("#dropdownbuttonimage4");
 
     let imagems = new Image();
+    imagems.src="../imagens/blusa-1.png";
+
+    document.getElementById("blackS").onclick = function(){
+        dropdownMenuButton3.setAttribute("src", "../imagens/cor10.png")
+        imagems.src="../imagens/blusa-1.png";
+    }
+    document.getElementById("yellowS").onclick = function(){
+        dropdownMenuButton3.setAttribute("src", "../imagens/cor3.png")
+        imagems.src="../imagens/blusa-4.png";
+    }
+    document.getElementById("pinkS").onclick = function(){
+        dropdownMenuButton3.setAttribute("src", "../imagens/cor9.png")
+        imagems.src="../imagens/blusa-5.png";
+    }
+    document.getElementById("purpleS").onclick = function(){
+        dropdownMenuButton3.setAttribute("src", "../imagens/cor8.png")
+        imagems.src="../imagens/blusa-2.png";
+    }
+    document.getElementById("blueS").onclick = function(){
+        dropdownMenuButton3.setAttribute("src", "../imagens/cor7.png")
+        imagems.src="../imagens/blusa-3.png";
+    }
     const putImg = document.querySelector("#put-clothes");
     putImg.onclick = function(){
-        imagems.src="../imagens/blusa-1.png";
+        contexto.clearRect(0, 0, tela.width, tela.height);
         contexto.drawImage(imagems, 120, 100, 350, 430);
+    };
+    let imagems2 = new Image();
+    imagems2.src="../imagens/blusaM-1.png";
+
+    document.getElementById("blackS2").onclick = function(){
+        imagems2.src="../imagens/blusaM-1.png";
+    }
+    document.getElementById("yellowS2").onclick = function(){
+        dropdownMenuButton4.setAttribute("src", "../imagens/cor3.png")
+        imagems2.src="../imagens/blusaM-4.png";
+    }
+    document.getElementById("pinkS2").onclick = function(){
+        dropdownMenuButton4.setAttribute("src", "../imagens/cor9.png")
+        imagems2.src="../imagens/blusaM-5.png";
+    }
+    document.getElementById("purpleS2").onclick = function(){
+        dropdownMenuButton4.setAttribute("src", "../imagens/cor8.png")
+        imagems2.src="../imagens/blusaM-2.png";
+    }
+    document.getElementById("blueS2").onclick = function(){
+        dropdownMenuButton4.setAttribute("src", "../imagens/cor7.png")
+        imagems2.src="../imagens/blusaM-3.png";
+    }
+    const putImg2 = document.querySelector("#put-clothes2");
+    putImg2.onclick = function(){
+        contexto.clearRect(0, 0, tela.width, tela.height);
+        contexto.drawImage(imagems2, 120, 100, 350, 430);
     };
 
     const oColor = document.querySelector("#o-color");
@@ -232,7 +283,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     }
     
 
-    /*document.getElementById("save-model").onclick = function onSave() {
+    document.getElementById("download").onclick = function onSave() {
         tela.toBlob((blob) => {
           const timestamp = Date.now().toString();
           const a = document.createElement('a');
@@ -243,7 +294,8 @@ document.addEventListener('DOMContentLoaded',()=>{
           a.remove();
         });
       }
-      */
+      
+
     const ciclo = ()=>{
         if(pincel.ativo && pincel.movendo && pincel.posAnterior){
             if(contexto.strokeStyle != colorP)
